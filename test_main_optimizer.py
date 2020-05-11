@@ -1,3 +1,4 @@
+# this takes the "main" modules and uses them to calculate the total deductions from all taxes
 
 from tax_law_uk_2019_2020 import uk_law as law
 import calc_marginals as cm
