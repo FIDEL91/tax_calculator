@@ -1,4 +1,5 @@
-#Salary Tax Calculator
+#this calculates the percentage of a number. it is used to calculate how much of a salary is invested in pensions.
+
 class percentage:
     
     def __init__(self,number,percentage):
