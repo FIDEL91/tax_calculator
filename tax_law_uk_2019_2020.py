@@ -1,3 +1,5 @@
+#this just contains the tax laws of th UK in list formats. It also contains values for the change in tax free allowances when you earn over a certain amount.
+
 class uk_law:
     
     #Income Tax Brackets
