@@ -1,5 +1,7 @@
 from tax_law_uk_2019_2020 import uk_law as law
 
+#this Calculator changes index no. 1 in lists. This is the tax free amount. The tax-free amount is reduced by £2 for every £1 earned over £100,000 Salary.
+
 class new_allowance:
     
     def __init__(self,gross):
