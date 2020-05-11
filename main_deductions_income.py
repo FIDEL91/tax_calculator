@@ -1,3 +1,5 @@
+##all calculations for salary tax calculations
+
 from tax_law_uk_2019_2020 import uk_law as law
 from calc_marginals import marginal_calc as mc
 from calc_percentage import percentage as pct
