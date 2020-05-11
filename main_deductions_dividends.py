@@ -1,3 +1,5 @@
+#all calculations for dividend tax calculations
+
 from calc_marginals import marginal_calc as tax
 
 class div_deductions:
