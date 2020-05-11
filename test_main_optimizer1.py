@@ -1,3 +1,5 @@
+# this uses test_main_optizer to test all possible salary values in the range (doest work right now)
+
 from tax_law_uk_2019_2020 import uk_law as law
 from test_main_optimizer import calc_deductions as cd
 
