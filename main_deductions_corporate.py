@@ -22,13 +22,13 @@ class corp_deductions:
     
     def corp_tax(self):
         
-        self.corp_tax = mc(self.gross_profit(),0).calculate()
+        self.corp_tax = mc(self.gross_profit(),10).calculate()
         
         return(self.corp_tax)
     
     def corp_ni(self):
         
-        self.corp_ni = mc(self.gross_profit(),2).calculate()
+        self.corp_ni = mc(self.gross_profit(),8).calculate()
         
         return(self.corp_ni)
     

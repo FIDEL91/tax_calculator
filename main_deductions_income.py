@@ -29,12 +29,12 @@ class salary_deductions:
             self.sl_bill = 0
             
         if self.student_loan == 1:
-            self.sl_bill = mc(self.post_pension_gross(),4).calculate()
+            sl_bill = mc(self.post_pension_gross(),4).calculate()
             
         elif self.student_loan == 2:
-            self.sl_bill = mc(self.post_pension_gross(),6).calculate()
+            sl_bill = mc(self.post_pension_gross(),6).calculate()
         
-        return(self.sl_bill)
+        return(sl_bill)
     
     def salary_ni(self):
         
@@ -44,30 +44,15 @@ class salary_deductions:
     
     def salary_tax(self):
         
-        a = law.tax_b  
-        tf_ch = law.acv
-        ratio = law.acv_ratio
-        
-        if self.post_pension_gross() > tf_ch:
-            if self.post_pension_gross() < (tf_ch + 2*a[1]):
-                self.tf_amount = self.post_pension_gross() - tf_ch
-        
-                self.tf_reduction = self.tf_amount/ratio
-        
-                a[1] = a[1] - self.tf_reduction
-                
-            elif self.post_pension_gross() > (tf_ch + 2*a[1]):
-                a[1] = 0
-
         self.tax = mc(self.post_pension_gross(),0).calculate()
         
         return(self.tax)
     
-    def total_deductions(self):
+    def total_deds(self):
         
-        self.total_deds = self.salary_ni() + self.salary_tax()
+        self.total_deductions = self.salary_ni() + self.salary_tax()
 
-        return(self.total_deds)
+        return(self.total_deductions)
     
     def sal_th(self):
         

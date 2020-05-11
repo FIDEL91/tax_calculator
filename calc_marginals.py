@@ -41,12 +41,12 @@ class marginal_calc:
         percentage = percentage_list
             
         bracket.append(self.value)
+        
+        bracket = [num for num in bracket if num <= self.value]
 
         bracket = list(set(bracket)) 
         
         bracket.sort()
-        
-        bracket = bracket[:bracket.index(self.value)+1]
         
         p2 = []
                 
@@ -58,8 +58,8 @@ class marginal_calc:
         
         for i in bracket:
             a = bracket.index(i)
-            i = 1
-            b = (bracket[a]-bracket[a-1] )* p2[a-1]
-            lst.append(b)
+            if i > 0:
+                b = (bracket[a]-bracket[a-1] )* p2[a-1]
+                lst.append(b)
 
         return(sum(lst))

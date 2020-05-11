@@ -22,12 +22,12 @@ class uk_law:
     sl_plan_2_pc = [0,0.09]
     
     #UK Corporation National Insurance
-    cni_b = [0]
-    cni_pc = [0.138]
+    cni_b = [0,0]
+    cni_pc = [0,0.138]
 
     #UK Corpoarate Tax
-    ctax_b = [0]
-    ctax_pc = [0.19]
+    ctax_b = [0,0]
+    ctax_pc = [0,0.19]
     
     #Dividend Thresholds
     div_b = [0,2000,50000,150000]
@@ -48,4 +48,3 @@ class uk_law:
     # Corporate Tax: 10
     # Dividend Tax: 12
     
-print(type(uk_law.tax_b[1]))
