@@ -1,5 +1,7 @@
 from tax_law_uk_2019_2020 import uk_law as law
 
+#this calculates the amount owed in taxes. it appends the value into a list, splits it, then multiplies by the percentage of the list that contains the percentage owed in that tax threshold.
+
 #Income Tax Calculator
 class marginal_calc:
     
