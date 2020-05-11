@@ -1,3 +1,5 @@
+#all calculations for corporate tax calculations
+
 from calc_marginals import marginal_calc as mc
 
 class corp_deductions:
